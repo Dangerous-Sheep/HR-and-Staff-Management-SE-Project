@@ -81,5 +81,37 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

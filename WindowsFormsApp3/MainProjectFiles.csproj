@@ -46,6 +46,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,23 +64,46 @@
     <Compile Include="ButtonDesigns\ButtonsDesign.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="doctorreg.cs">
+    <Compile Include="ConnectionTester.cs" />
+    <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="doctorreg.Designer.cs">
-      <DependentUpon>doctorreg.cs</DependentUpon>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="janitor_reg.cs">
+    <Compile Include="employeerecord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="janitor_reg.Designer.cs">
-      <DependentUpon>janitor_reg.cs</DependentUpon>
+    <Compile Include="employeerecord.Designer.cs">
+      <DependentUpon>employeerecord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Laboratistreg.cs">
+    <Compile Include="expenses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Laboratistreg.Designer.cs">
-      <DependentUpon>Laboratistreg.cs</DependentUpon>
+    <Compile Include="expenses.Designer.cs">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hrandstaffDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrandstaffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrandstaffDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrandstaffDataset1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="landingpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="landingpage.Designer.cs">
+      <DependentUpon>landingpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaves.Designer.cs">
+      <DependentUpon>leaves.cs</DependentUpon>
     </Compile>
     <Compile Include="loginform.cs">
       <SubType>Form</SubType>
@@ -87,23 +111,11 @@
     <Compile Include="loginform.Designer.cs">
       <DependentUpon>loginform.cs</DependentUpon>
     </Compile>
-    <Compile Include="dashboard.cs">
+    <Compile Include="payroll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboard.Designer.cs">
-      <DependentUpon>dashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Nursereg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nursereg.Designer.cs">
-      <DependentUpon>Nursereg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="pharmacist reg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="pharmacist reg.Designer.cs">
-      <DependentUpon>pharmacist reg.cs</DependentUpon>
+    <Compile Include="payroll.Designer.cs">
+      <DependentUpon>payroll.cs</DependentUpon>
     </Compile>
     <Compile Include="registration.cs">
       <SubType>Form</SubType>
@@ -113,26 +125,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="doctorreg.resx">
-      <DependentUpon>doctorreg.cs</DependentUpon>
+    <Compile Include="registration2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registration2.Designer.cs">
+      <DependentUpon>registration2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views.Designer.cs">
+      <DependentUpon>views.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="janitor_reg.resx">
-      <DependentUpon>janitor_reg.cs</DependentUpon>
+    <EmbeddedResource Include="employeerecord.resx">
+      <DependentUpon>employeerecord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Laboratistreg.resx">
-      <DependentUpon>Laboratistreg.cs</DependentUpon>
+    <EmbeddedResource Include="expenses.resx">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="landingpage.resx">
+      <DependentUpon>landingpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaves.resx">
+      <DependentUpon>leaves.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginform.resx">
       <DependentUpon>loginform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dashboard.resx">
-      <DependentUpon>dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Nursereg.resx">
-      <DependentUpon>Nursereg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pharmacist reg.resx">
-      <DependentUpon>pharmacist reg.cs</DependentUpon>
+    <EmbeddedResource Include="payroll.resx">
+      <DependentUpon>payroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +170,34 @@
     <EmbeddedResource Include="registration.resx">
       <DependentUpon>registration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="registration2.resx">
+      <DependentUpon>registration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views.resx">
+      <DependentUpon>views.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hrandstaffDataSet.xsc">
+      <DependentUpon>hrandstaffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrandstaffDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrandstaffDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrandstaffDataSet.xss">
+      <DependentUpon>hrandstaffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrandstaffDataset1.xsc">
+      <DependentUpon>hrandstaffDataset1.xsd</DependentUpon>
+    </None>
+    <None Include="hrandstaffDataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrandstaffDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrandstaffDataset1.xss">
+      <DependentUpon>hrandstaffDataset1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
